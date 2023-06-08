@@ -1,11 +1,11 @@
-@viewport {
-    width: device-width ;
-    zoom: 1.0 ;
-  }
 @font-face {
     font-family: BentonSansLight;
     src: url("./fonts/BentonSansThin.otf") format("opentype");
 }
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
 @font-face {
     font-family: BentonSans;
     src: url("./fonts/BentonSansLight.otf") format("opentype");
