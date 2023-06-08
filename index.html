@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+
+</head>
+
+<body>
+    <div class="hamburger-menu">
+        <div class="hamburger-text">
+            <li><a class="white-underline" href="">Who We Are</a></li>
+            <li><a class="white-underline" href="#">News & Stories</a></li>
+            <li><a class="white-underline" href="#">Impact</a></li>
+            <li><a class="white-underline" href="#">Institute</a></li>
+            <li><a class="white-underline" href="#">Investors</a></li>
+            <li><a class="white-underline" href="#">Careers</a></li>
+        </div>
+    </div>
+    <div id="header">
+        <div class="hamburger">
+            <input class="checkbox" type="checkbox" name="" id="checker" onclick="checkerFunction()" />
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+        </div>
+        <div id="header-img">
+           <a href="https://www.jpmorganchase.com/"><img src="./images/jpmc-logo-290x20pxx.png" alt=""></a>
+        </div>
+        <div id="header-list">
+            <ul>
+                <li><a href="https://www.jpmorganchase.com/news-stories" class =blue-underline>Who We Are</a></li>
+                <li><a href="https://www.jpmorganchase.com/news-stories" class =blue-underline>News & Stories</a></li>
+                <li><a href="https://www.jpmorganchase.com/impact/our-approach" class =blue-underline>Impact</a></li>
+                <li><a href="https://www.jpmorganchase.com/institute" class =blue-underline>Institute</a></li>
+                <li><a href="https://www.jpmorganchase.com/ir" class =blue-underline>Investors</a></li>
+                <li><a href="https://careers.jpmorgan.com/global/en/home" class =blue-underline>Careers</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="slides">
+            <div class=" banner show" id="1">
+                <img src="./images/impact-second-chance-hero.jpg" alt="">
+                <div class="banner-box">
+                    <div class="text-box">
+                        <div class="big-text white thin line-height spacing">Together, We Make It Happen
+                        </div>
+                        <div class="divider"></div>
+                        <div class="small-text white">See how our clients help move our economy foward and uplift
+                            communities.</div>
+                        <button class="button">
+                           <a href="https://www.jpmorganchase.com/impact">Learn more</a> 
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" banner show" id="2">
+                <img src="./images/2022-jamie-banner.jpg" alt="">
+                <div class="banner-box">
+                    <div class="text-box">
+                        <div class="big-text white thin line-height spacing">Read the JP Morgan Chase Annual Report
+                        </div>
+                        <div class="divider"></div>
+                        <div class="small-text white"></div>
+                        <button class="button">
+                           <a href="https://reports.jpmorganchase.com/investor-relations/2022/ar-ceo-letters.htm">Learn more</a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" banner " id="three">
+                <img src="./images/hero-banner-founders-talk-leadership.jpg" alt="">
+                <div class="banner-box right-box">
+                    <div class="text-box ">
+                        <div class="big-text white thin line-height spacing">Founders Talk Leadership
+                        </div>
+                        <div class="divider"></div>
+                        <div class="small-text white">Two entrepreneurs share how passion drives their companies</div>
+                        <button class="button">
+                            Learn more
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" banner " id="4">
+                <img src="./images/hero-banner-sustainable-development-1440x430.jpg" alt="">
+                <div class="banner-box right-box">
+                    <div class="text-box">
+                        <div class="big-text white thin line-height spacing">Advancing Sustainable Development
+                        </div>
+                        <div class="divider"></div>
+                        <div class="small-text white">Driving clean energy and inclusive growth through $2.5T over 10 years</div>
+                        <button class="button">
+                            Learn more
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" banner " id="5">
+                <img src="./images/hero-banner-emerging-tech-talent.jpg" alt="">
+                <div class="banner-box right-box">
+                    <div class="text-box">
+                        <div class="big-text white thin line-height spacing">Emerging Tech Talent
+                        </div>
+                        <div class="divider"></div>
+                        <div class="small-text white">How an early-career program supported one family’s future</div>
+                        <button class="button">
+                            Learn more
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="carousel-container">
+        <div class="carousel-button" onclick="buttonMove(0)">
+            <div class="carousel-left">
+            </div>
+        </div>
+        <ul class="dots">
+            <div class="triangle"></div>
+            <li class = " active" onclick="moveSlider(0,0)"></li>
+
+            <li class = " " onclick="moveSlider(100,1)"></li>
+            <li class = "" onclick="moveSlider(200,2)"></li>
+             <li class = "" onclick="moveSlider(300,3)"></li>
+                <li class = "" onclick="moveSlider(400,4)"></li>
+        </ul>
+        <div class="carousel-button" onclick="buttonMove(1)">
+            <div class="carousel-right"></div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="slide-down instant">
+            <div class="img"><img src="./images/2022-jamie-headshot.jpeg" alt=""></div>
+            <div class="bold small-text">Annual Report</div>
+            <div class="small-text">Our latest report and letters to shareholders, released April 2023</div>
+            <div class="small-text last"><a href="https://reports.jpmorganchase.com/investor-relations/2022/ar-ceo-letters.htm" class="">Learn More</a></div>
+        </div>
+        <div class="slide-down instant">
+            <div class="img"><img src="./images/financial_health_hosting_seminars_in_majority_black_and_latino_communities.jpg" alt=""></div>
+            <div class="bold small-text">Racial Equity Commitment</div>
+            <div class="small-text">How we’re helping to drive inclusive growth 
+            </div>
+            <div class="small-text last"><a href="https://www.jpmorganchase.com/impact/racialequity" class="">Learn More</a></div>
+        </div>
+        <div class="slide-down instant">
+            <div class="img"><img src="./images/image-jpmc-forbes-recognition.jpeg" alt=""></div>
+            <div class="bold small-text">Most Admired Companies</div>
+            <div class="small-text">FORTUNE names JPMorgan Chase one of the most admired companies in the world
+            </div>
+            <div class="small-text last"><a href="https://fortune.com/ranking/worlds-most-admired-companies/2023/" class="">Learn More</a></div>
+        </div>
+
+    </div>
+    <div class="impact">
+        <div class="impact-text">Our Impact in Action</div>
+        <div class="impact-border"></div>
+    </div>
+    <div class="image-and-text ">
+        <div class="image-box multi-hover">
+            <img class="" src="./images/image-second-chance-z2.jpg" alt="">
+        </div>
+        <div class="right-half">
+            <div class="big-text">Driving a Strong and Inclusive Economy</div>
+           <div class="small"> We help drive economic growth and break down barriers to opportunities across the globe.</div>
+           <button class="button word multi-hover">
+            See Our Impact
+        </button>
+        </div>
+
+    </div>
+    <div class=" banner thin-banner">
+        <img src="./images/singapore-day-1440x502.jpg" alt="">
+        <div class="banner-box">
+            <div class="text-box">
+                <div class="smaller-text white ">CAREERS</div>
+                <div class="big-text white thin line-height spacing">Investing in Our People
+                </div>
+                <div class="divider"></div>
+                <div class="small-text white">We're creating a workplace where people can make an impact and grow their careers
+                   </div>
+                <button class="button">
+                    View Careers
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="our-work">
+        <div class="impact">
+            <div class="impact-text">Our Work in Action</div>
+            <div class="impact-border"></div>
+        </div>
+        <div class="gallery">
+            <div class="slide-down later">
+                <div class="img"><img src="./images/banner-build-back-detroit-800x450.jpeg" alt=""></div>
+                <div class="bold small-text">Helping Developers Participate in Detroit's Comeback</div>
+                <div class="small-text">The Equitable Development Initiative is supporting the next generation of Black developers. </div>
+                <div class="small-text last"><a href="" class="">Learn More</a></div>
+            </div>
+            <div class="slide-down later">
+                <div class="img"><img src="./images/header-chic-pilsen-800x450.jpg" alt=""></div>
+                <div class="bold small-text">Transforming Abandoned Lots into Affordable Homes</div>
+                <div class="small-text">The Resurrection Project: bridging the racial homeownership divide in Chicago. 
+ 
+                </div>
+                <div class="small-text last"><a href="" class="">Learn More</a></div>
+            </div>
+            <div class="slide-down later">
+                <div class="img"><img src="./images/philadelphia-branch-800x450.jpeg" alt=""></div>
+                <div class="bold small-text">Expanding Community Center Branches
+
+                </div>
+                <div class="small-text">A new Chase branch aims to expand access to banks for West Philadelphia residents.
+                </div>
+                <div class="small-text last"><a href="" class="">Learn More</a></div>
+            </div>
+    
+        </div>
+
+
+    </div>
+    <div class="impact">
+        <div class="impact-text">Dedicated to Lasting Progress</div>
+        <div class="impact-border"></div>
+        <div class="impact-bottom">JPMorgan Chase serves millions of customers, clients and communities in 100+ global markets. </div>
+    </div>
+    <div class="image-and-text ">
+        <div class="image-box multi-hover">
+            <img class="" src="./images/business-principles-450x450.jpg" alt="">
+        </div>
+        <div class="right-half">
+            <div class="big-text">200 years of service, integrity and growth</div>
+           <div class="small"> Our work is guided by strong fundamental principles that enable us to strengthen, safeguard and grow our company over time.</div>
+           <button class="button word multi-hover">
+            Who We Are
+        </button>
+        </div>
+
+    </div>
+
+</body>
